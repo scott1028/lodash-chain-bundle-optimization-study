@@ -1,0 +1,16 @@
+{
+  "name": "lodash-chain-test",
+  "version": "1.0.0",
+  "main": "index.js",
+  "license": "MIT",
+  "dependencies": {
+    "esbuild": "^0.12.10",
+    "lodash": "^4.17.21"
+  },
+  "scripts": {
+    "build1": "esbuild index1.mjs --bundle --platform=node --outfile=dist1.js",
+    "build2": "esbuild index2.mjs --bundle --platform=node --outfile=dist2.js",
+    "build3": "esbuild index3.mjs --bundle --platform=node --outfile=dist3.js",
+    "test": "yarn build1; yarn build2; yarn build3"
+  }
+}
